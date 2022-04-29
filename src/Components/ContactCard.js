@@ -9,7 +9,9 @@ const ContactCard = (props) => {
       <td>{name}</td>
       <td>{email}</td>
       <td>
-        <Button variant="success">Edit</Button>
+     
+        <Button variant="success" onClick={()=>props.clickHandler(id)}>Edit</Button>
+     
         <Button variant="danger" onClick={()=>props.clickHandler(id)}>
           Delete
         </Button>
